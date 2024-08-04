@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+}
+
+
+nav{
+    padding: 20px 5%;
+    border-bottom: 2px solid #ECECE8;
+    width: 100%;
+}
+
+
+.answer-container{
+    width: 100%;
+}
+
+.quiz-question{
+    width: 100%;
+    background-color: #FCC822;
+    padding: 20px 5%;
+    margin-top: 40px;
+    min-height: 200px;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.quiz-question h1{
+    font-size: 48px;
+}
+
+.quiz-answers{
+    width: 100%;
+    padding: 20px 5%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.quiz-answers .answer{
+    cursor: pointer;
+    padding: 15px 10px;
+    min-width: 250px;
+    min-height: 84px;
+    background-color: #D1D1D1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz-answers .answer:hover{
+    background-color: #FCC822;
+    color: white;
+}
+
+.quiz-answers .answer.correct {
+    background-color: green;
+    color: white;
+}
+
+.quiz-answers .answer.incorrect {
+    background-color: red;
+    color: white;
+}
+
+.btns{
+    width: 100%;
+    padding: 20px 5%;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btns .ctrl-btn-pre{
+    background-color: #D1D1D1;
+    padding: 15px 12px;
+    border: none;
+    color: black;
+    font-size: 18px;
+    min-width: 200px;
+    cursor: pointer;
+}
+
+.btns .ctrl-btn-next{
+    background-color: #FCC822 ;
+    padding: 15px 12px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    min-width: 200px;
+    cursor: pointer;
+}
+
+.timer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+}
+
+.btns .timer{
+    position: relative;
+}
+
+.timer h1{
+    position: absolute;
+    top: 43px;
+    right: 43px;
+}
+
+.score{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 5%;
+    background-color: rgba(128, 128, 128, 0.525);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-container{
+    position: relative;
+    min-width: 70%;
+    padding: 3%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-box{
+    position: absolute;
+    top: 30%;
+    right: 40%;
+    text-align: center;
+}
+
+.score-box p{
+    font-size: 44px;
+}
+
+.score-box h1{
+    font-size: 80px;
+}
+
+.power-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.power-btn .home{
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    background-color: #FCC822 ;
+    padding: 15px 12px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    min-width: 200px;
+}
+
+.power-btn .restart{
+    cursor: pointer;
+    background-color: #FCC822 ;
+    padding: 15px 12px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    min-width: 200px;
+}
+
+.power-btn .home:hover{
+    background-color: #D1D1D1;
+    color: black;
+}
+
+.power-btn .restart:hover{
+    background-color: #D1D1D1;
+    color: black;
+}

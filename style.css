@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+nav{
+    padding: 20px 5%;
+    border-bottom: 2px solid #ECECE8;
+    width: 100%;
+}
+
+.hero{
+    width: 100%;
+    padding: 50px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero .hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hero .hero-content h1{
+    font-size: 64px;
+    font-weight: medium;
+    color: #333333;
+}
+
+.hero .hero-content p{
+    font-size: 24px;
+    font-weight: normal;
+    color: #828282;
+}
+
+.hero .hero-content .start-box{
+    margin-top: 30px;
+    min-width: 200px;
+}
+
+.hero .hero-content .start-box a{
+    background-color: #FFCD2E;
+    text-decoration: none;
+    padding: 18px 20px;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;  
+    width: 100%;
+}
+
+.hero .hero-content .start-box a:hover{
+    background-color:  #828282;
+    color: black;
+}
+
+
+.hero .img-container img{
+    width: 600px;
+}
+
+
+    
+
+
